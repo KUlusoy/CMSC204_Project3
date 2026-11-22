@@ -11,11 +11,11 @@
 
 ## 💿 What is it?
 
-So, this is basically a tiny version of Spotify with a real desktop window. You log in, pick one of your playlists from a dropdown, and then flip through the songs with next and previous buttons. On top of that, you can add and remove songs right from the app.
+This is basically a tiny version of Spotify with a real desktop window. You log in, pick one of your playlists from a dropdown, and then flip through the songs with next and previous buttons. On top of that, you can add and remove songs right from the app.
 
 The fun part, though, is what's under the hood. Instead of using Java's built in `LinkedList`, I wrote my own `GenericLinkedList<T>` with its own iterator. That way, the next and previous buttons are actually walking forward and backward through my list.
 
-## ✨ Features
+## 📌 Features
 
 - **Log in** with a username and password (with custom exceptions if the user doesn't exist or the password is wrong)
 - **Load users from a file**, including all their playlists and songs

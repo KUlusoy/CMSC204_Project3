@@ -9,13 +9,13 @@
 
 ---
 
-## 💿 What is it?
+## What is it?
 
 This is basically a tiny version of Spotify with a real desktop window. You log in, pick one of your playlists from a dropdown, and then flip through the songs with next and previous buttons. On top of that, you can add and remove songs right from the app.
 
 The fun part, though, is what's under the hood. Instead of using Java's built in `LinkedList`, I wrote my own `GenericLinkedList<T>` with its own iterator. That way, the next and previous buttons are actually walking forward and backward through my list.
 
-## 📌 Features
+## Features
 
 - **Log in** with a username and password (with custom exceptions if the user doesn't exist or the password is wrong)
 - **Load users from a file**, including all their playlists and songs
@@ -24,7 +24,7 @@ The fun part, though, is what's under the hood. Instead of using Java's built in
 - **Add or remove songs** while the app is running
 - **Lots of JUnit tests** for the linked list, songs, playlists, users, and the manager
 
-## 🚀 Running it
+## Running it
 
 First, compile everything:
 
@@ -51,7 +51,7 @@ song: Sunflower - Post Malone
 
 Finally, type in the username and password from that file, and you're in!
 
-## 📁 Files
+## Files
 
 | File | What it does |
 |---|---|
@@ -61,6 +61,6 @@ Finally, type in the username and password from that file, and you're in!
 | `SpotifySwingApp.java` | the actual window you click around in |
 | `*Test.java` | JUnit tests |
 
-## 💭 What I learned
+## What I learned
 
 Mostly, I finally understood how iterators really work, since I had to write `next()`, `previous()`, and `remove()` myself. Also, building a GUI on top of my own data structure made it way more satisfying than just passing tests.
